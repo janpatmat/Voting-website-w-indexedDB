@@ -1,0 +1,23 @@
+  
+
+.check{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    border: 100px;
+    padding: 10px;
+}
+.header{
+    color: white;
+}
+.quote{
+    text-align: right;
+    color: #bebebe
+}
+.checkk{
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    border: 100px;
+   
+}

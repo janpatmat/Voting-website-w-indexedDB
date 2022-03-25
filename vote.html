@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/litera/bootstrap.min.css" integrity="sha384-enpDwFISL6M3ZGZ50Tjo8m65q06uLVnyvkFO3rsoW0UC15ATBFz3QEhr3hmxpYsn" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload = "javascript:setVote()">
+    <!--HEADER-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Leader votepage</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarColor03">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="vote.html">Vote
+                  <span class="visually-hidden">(current)</span>
+
+                </a>
+              </li>
+             
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+       <!--end of HEADER-->
+
+      <center><h1>Vote Wisely!</h1></center>
+       <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Image</th>
+            <th scope="col">Name</th>
+            <th scope="col">Votes</th>
+            <th scope="col">Vote button</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <th scope="row"><img src = "paintrick.jpg" class = "checkk"></th>
+            <td><h4>Patrick Star</h4></td>
+            <td><h3 id = "vcPatrick">test</h3></td>
+            <td> <button onclick = "votepat()"class="btn btn-primary btn-lg">Cast vote</button></td>
+          </tr>
+         
+          <tr class="table-secondary">
+            <th scope="row"><img src = "floyd.jpg" class = "checkk"></th>
+            <td><h4>Mayweather</h4></td>
+            <td><h3 id = "vcFloyd">test</h3></td>
+            <td><button onclick = "votefloyd()" class="btn btn-primary btn-lg">Cast Vote</button></td>
+          </tr>
+          <tr>
+            <th scope="row"> <img src = "dao.jpg" class = "checkk"></th>
+            <td><h4>Dao Ming Si</h4></td>
+            <td><h3 id = "vcDao">test</h3></td>
+            <td><button onclick = "votedao()" class="btn btn-primary btn-lg">Cast Vote</button></td>
+          </tr>
+          <tr class="table-secondary">
+            <th scope="row"><img src = "jihyo.jpg" class = "checkk"></th>
+            <td><h4>Park Jihyo</h4></td>
+            <td><h3 id = "vcPark">test</h3></td>
+            <td><button onclick = "votepark()" class="btn btn-primary btn-lg">Cast Vote</button></td>
+          </tr>
+          <tr>
+            <th scope="row"><img src = "rasta.jpg" class = "checkk"></th>
+            <td><h4>Rastaman</h4></td>
+            <td><h3 id = "vcRasta">test</h3></td>
+            <td><button onclick = "voterasta()" class="btn btn-primary btn-lg">Cast Vote</button></td>
+          </tr>
+          <tr class="table-secondary">
+            <th scope="row"><img src = "naruto.png" class = "checkk"></th>
+            <td><h4>Naruto Uzumaki</h4></td>
+            <td><h3 id = "vcNar">test</h3></td>
+            <td><button onclick = "votenar()" class="btn btn-primary btn-lg">Cast Vote</button></td>
+          </tr>
+         
+        </tbody>
+      </table>
+      
+    <button onclick=" resetdb()">reset</button>
+   
+    
+   
+    
+  
+    <script src="https://unpkg.com/localbase/dist/localbase.dev.js"></script>
+    <script src="vscript.js">
+        
+    </script>
+</body>
+</html>
